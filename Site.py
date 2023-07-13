@@ -63,12 +63,8 @@ with st.container():
             st.image(image, caption='Seita de Saiph.')
             st.markdown('---')
 with st.container():
-    st.subheader(':red[Entre no grupo do whatsapp clicando em:] [  Quero entrar](https://chat.whatsapp.com/JxfLoBKfU7W1efSTJgG5LU)')
-
-
+    if st.button('Grupo do Whatsapp'):
+        st.write('Aqui: (https://chat.whatsapp.com/JxfLoBKfU7W1efSTJgG5LU)')
+    
     st.header('Escute essa playlist animal enquanto conhece nosso RPG: ')
     st.video('https://youtu.be/j6niFit62ss')
-    add_selectbox = st.sidebar.selectbox(
-        "Como você gostaria de ser contactado?",
-        ("Email", "Home phone", "Mobile phone")
-    )
